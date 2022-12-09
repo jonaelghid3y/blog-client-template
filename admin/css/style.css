@@ -1,4 +1,12 @@
+#adminlänk1,#adminlänk2{
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  margin: 20px;
+}
 table {
+
+ 
+
 
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -28,10 +36,13 @@ table {
 h1{
   font-family: arial, sans-serif;
     text-align: center;
+    font-size: 40px;
 
 }
 #container3{
   height: 600px;
+  
+ 
  
 
 }
@@ -49,6 +60,7 @@ h1{
   
   grid-template-columns: repeat(12, 1fr);
 }
+
 
 
 #titel{
@@ -80,8 +92,8 @@ h1{
   
 }
   #select{
-    grid-column-start: 6;
-    grid-column-end: 8;
+    grid-column-start: 4;
+    grid-column-end: 10;
     grid-row-start: 11;
     grid-row-end: 12;
 

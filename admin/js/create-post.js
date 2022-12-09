@@ -6,9 +6,9 @@ document.getElementById('create-pun-form').addEventListener('submit', async func
     let titles = document.getElementById('titel')
     let authors = document.getElementById('author')
     let texts = document.getElementById('content-textarea')
-    let selection = document.getElementById('selection')
+    let selection = document.getElementById('select')
     console.log(titles.value)
-
+    console.log(select.value)
     const blogpost = {
 
         title: titles.value,
@@ -17,8 +17,7 @@ document.getElementById('create-pun-form').addEventListener('submit', async func
         tags: selection.value
 
     }
-    console.log(blogpost)
-    console.log(JSON.stringify(blogpost))
+ 
 
 
 
@@ -35,7 +34,7 @@ document.getElementById('create-pun-form').addEventListener('submit', async func
 
         })
 
-        location.replace('index.html')
+        //location.replace('index.html')
     } catch (error) {
         console.log(error)
     }

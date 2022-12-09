@@ -55,7 +55,9 @@ async function fetchAllbloggs() {
                     method: 'DELETE'
                 });
     
-                //e.target.parentNode.parentNode.remove();
+                e.target.parentNode.parentNode.remove();
+
+                
             } catch(error) {
                 console.log(error);
             }

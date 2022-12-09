@@ -1,13 +1,47 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>This page is required for the VG grade</h1>
+    <h1 id="header">Create post</h1>
+
+
+    <div id="container3">
+
+
+        <form id="create-pun-form">
+
+
+            <input id="titel" type="text" placeholder="titel"> </input><br>
+            <input id="author" type="text" placeholder="Författare"> </input><br>
+            <textarea name="content" id="content-textarea" cols="30" rows="10" placeholder="inlägg.."></textarea><br>
+            <input id="submit" type="submit" value="Create"><br>
+            
+            
+            <select id="select" multiple>
+                <option value=""> Välj taggar</option>
+                <option value="politics"> politics</option>
+                <option value="sports"> sports</option>
+                <option value="food">food</option>
+
+
+            </select>
+            
+            <a id="skapalänk" href="../admin/index.html">BACK</a> <br>
+        
+        </form>
+
+
+    </div>
+
+
 
     <script src="js/create-post.js"></script>
 </body>
+
 </html>

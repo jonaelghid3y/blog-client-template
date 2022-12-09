@@ -7,8 +7,8 @@ document.getElementById('create-pun-form').addEventListener('submit', async func
     let authors = document.getElementById('author')
     let texts = document.getElementById('content-textarea')
     let selection = document.getElementById('select')
-    console.log(titles.value)
-    console.log(select.value)
+  
+  
     const blogpost = {
 
         title: titles.value,

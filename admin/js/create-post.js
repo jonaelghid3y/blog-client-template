@@ -60,13 +60,12 @@ class CustomSelect {
 document.getElementById('create-pun-form').addEventListener('submit', async function (e) {
     e.preventDefault();
     const form = e.target;
-    console.log(e.target)
-    console.log()
+    
     let titles = document.getElementById('titel')
     let authors = document.getElementById('author')
     let texts = document.getElementById('content-textarea')
     let selection = document.getElementById('select')
-  
+    console.log(selection.value)
   
     const blogpost = {
 

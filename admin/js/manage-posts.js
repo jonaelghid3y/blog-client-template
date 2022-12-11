@@ -14,8 +14,8 @@ async function fetchAllbloggs() {
             <td>${blog.author}</td>
             <td>${blogDate.getFullYear()}-${blogDate.getMonth()}-${blogDate.getDate()}</td>
             <td> ${blog.tags}</td>
-            <td> <a href="update-post.html?id=${blog._id}"> uppdatera</a> </td>
-            <td> <a class="deletebtn" href="#" data-id="${blog._id}"> radera</a> </td>
+            <td> <button class="uppdatebtn" href="update-post.html?id=${blog._id}">ändra</button><button class="deletebtn" href="#" data-id="${blog._id}">Ta bort</button></td>
+           
          
 
           </tr>

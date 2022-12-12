@@ -6,7 +6,61 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>This page is required for the VG grade</h1>
+
+    <h1>Update post</h1>
+
+    <nav>
+        
+        <a href="index.html">Blog page</a>
+
+    </nav>
+
+    <hr>
+
+    <div id="container3">
+
+
+        <form id="update-forms">
+
+            <br>
+            <label for="titel">Title</label> <br> <br>
+            <input id="titel" type="text"> </input> <br>
+
+            <label for="author">Author</label> <br> <br>
+            <input id="author" type="text"> </input> <br>
+            
+            <label for="content-text">Content</label> <br><br>
+
+            <textarea name="content" id="content-text" cols="30" rows="10"></textarea> <br> <br>
+            
+            
+            <label for="selectors">Tags</label> <br><br>
+
+            <select id="selectors" name="selectors"  multiple>
+
+                <option value="economics">Economics</option>
+                <option value="politics">Politics</option>
+                <option value="sport">Sport</option>
+                <option value="food">Food</option>
+                <option value="art">Art</option>
+                <option value="cars">Cars</option>
+                <option value="travel">Travel</option>
+
+
+            </select> <br> <br>
+
+            <input id="submit-btn" type="submit" value="Update"><br>
+            <br>
+            
+            <a id="skapalänk" href="../admin/index.html"> &#x2190; Back</a> <br>
+        
+        </form>
+
+
+    </div>
+
+
+
 
     <script src="js/update-post.js"></script>
 </body>

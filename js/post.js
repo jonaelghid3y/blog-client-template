@@ -36,9 +36,8 @@ async function func(id = "") {
                 <i>${newDate.getFullYear()}</i>-<i>${newDate.getMonth() + 1}</i> -<i>${newDate.getDate()}</i>-<i>${newDate.getHours()}</i>-<i>${newDate.getMinutes()}</i>-<i>${newDate.getSeconds()}</i></span> </p>
 
                 <b><p>tags:</b>${datas.tags}</p>
-                <p>${datas.content} <a href="post.html?id=${datas._id}" > Read more </a> </p>
+                <p>${datas.content} <a href="index.html?id=${datas._id}"> <br> <br>  &#x2190; Back</a> </p>
 
-                <hr>
                 
             </div>`;
             }

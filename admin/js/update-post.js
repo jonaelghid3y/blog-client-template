@@ -3,7 +3,7 @@
 
 window.onload = function() {
 
-    let urlParams = new URLSearchParams(location.search)
+    let urlParams = new URLSearchParams(window.location.search)
     console.log(urlParams.get('id'))
 
    

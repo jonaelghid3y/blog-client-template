@@ -33,7 +33,7 @@ async function func(id = "") {
 
                 <p><i>${datas.author}</i> | <span class="date"> 
                 
-                <i>${newDate.getFullYear()}</i>-<i>${newDate.getMonth() + 1}</i> -<i>${newDate.getDate()}</i>-<i>${newDate.getHours()}</i>-<i>${newDate.getMinutes()}</i>-<i>${newDate.getSeconds()}</i></span> </p>
+                <i>${newDate.getFullYear()}</i>-<i>${newDate.getMonth() + 1}</i> -<i>${newDate.getDate()}</i> <i>T</i> <i>${newDate.getHours()}:</i><i>${newDate.getMinutes()}:</i><i>${newDate.getSeconds()}</i></span> </p>
 
                 <b><p>tags:</b>${datas.tags}</p>
                 <p>${datas.content} <a href="index.html?id=${datas._id}"> <br> <br>  &#x2190; Back</a> </p>

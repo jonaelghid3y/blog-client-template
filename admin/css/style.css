@@ -1,84 +1,90 @@
-#adminlänk1,#adminlänk2{
+#adminlänk1,
+#adminlänk2 {
   font-family: arial, sans-serif;
   font-size: 20px;
   margin: 20px;
+  background-color: #009578;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
 }
-#container2{
 
+#container2 {
   margin-top: 120px;
 }
-#tablecontainer{
-margin-top: 0px;
-display: flex;
-justify-content: center;
-align-items: center;
+
+#tablecontainer {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 table {
 
- 
-
-
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 80%;
-    margin-top: 50px;
-  }
-   
-  td, th,#titel,#author{
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
-  #admin{
-
-    font-family: arial, sans-serif;
-    text-align: center;
-
-  }
-  #container2{
-
-    text-align: center;
-  }
-h1{
   font-family: arial, sans-serif;
-    text-align: center;
-    font-size: 40px;
-
-}
-#container3{
- margin-top: 100px;
-   
-   grid-template-columns: repeat(12, 1fr);
- 
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 50px;
 }
 
+td,
+th,
+#titel,
+#author {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
 
-#create-pun-form{
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#admin {
+
+  font-family: arial, sans-serif;
+  text-align: center;
+
+}
+
+#container2 {
+
+  text-align: center;
+}
+
+h1 {
+  font-family: arial, sans-serif;
+  text-align: center;
+  font-size: 40px;
+
+}
+
+#container3 {
+  margin-top: 100px;
+
+  grid-template-columns: repeat(12, 1fr);
+
+}
+
+
+#create-pun-form {
 
 
   height: 700x;
-   
-   display: grid;
-   width: 89%;
-   margin: 0 auto;
-   grid-auto-rows: 1fr;
-   column-gap: 2%;
-   row-gap: 20px;
-   height: 600px;
-   
-   grid-template-columns: repeat(12, 1fr);
-  
 
- 
+  display: grid;
+  width: 89%;
+  margin: 0 auto;
+  grid-auto-rows: 1fr;
+  column-gap: 2%;
+  row-gap: 20px;
+  height: 600px;
+
+  grid-template-columns: repeat(12, 1fr);
+
 }
-
-
-#titel{
+#titel {
 
   grid-column-start: 5;
   grid-column-end: 9;
@@ -86,23 +92,26 @@ h1{
   grid-row-end: 3;
 
 }
-#author{
+#author {
   grid-column-start: 5;
   grid-column-end: 9;
   grid-row-start: 3;
   grid-row-end: 4;
-  
-}#content-textarea{
+
+}
+
+#content-textarea {
 
   grid-column-start: 4;
   grid-column-end: 10;
   grid-row-start: 4;
   grid-row-end: 10;
-  
+
 }
-#selectiondiv{
-  
-  
+
+#selectiondiv {
+
+
   grid-column-start: 6;
   grid-column-end: 8;
   grid-row-start: 10;
@@ -114,24 +123,21 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  
-
-
-  
 }
 
-  #submit{
-    grid-column-start: 6;
-    grid-column-end: 8;
-    grid-row-start: 12;
-    grid-row-end: 13;
-    height: 50px;
-    background: #009578;
+#submit {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 12;
+  grid-row-end: 13;
+  height: 50px;
+  background: #009578;
   color: #ffffff;
   font-family: "Heebo", sans-serif;
   text-align: center;
-  }
-#skapalänk{
+}
+
+#skapalänk {
   text-align: center;
   grid-column-start: 6;
   grid-column-end: 8;
@@ -140,11 +146,11 @@ h1{
   font-family: "Heebo", sans-serif;
   text-align: center;
   display: border 1px solid black;
-  
+
 }
 
 .select {
-margin: 10px;
+  margin: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 300px;
@@ -168,30 +174,49 @@ margin: 10px;
   background: #009578;
   color: #ffffff;
 }
-.deletebtn{
+
+.deletebtn {
+  display: inline-block;
   margin-left: 10px;
   color: white;
-  background-color: red;
- 
-}
-.uppdatebtn{
-
-  background-color: yellow;
-  
+  background-color: rgb(240, 74, 74);
+  margin-top: 10px;
+  padding: 5px;
 
 }
+
+.uppdatebtn {
+  border: 1px solid black;
+  margin-left: 10px;
+
+  font-size: 15px;
+  background-color: #009578;
+  color: rgb(237, 234, 234);
+  text-decoration: none;
+
+
+}
+
+a {
+
+  background-color: #009578;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
 
 /*_________________________________________------------------------------background animation---------------------____________________________________________________*/
 @keyframes move {
   100% {
-      transform: translate3d(0, 0, 1px) rotate(360deg);
+    transform: translate3d(0, 0, 1px) rotate(360deg);
   }
 }
 
 .background {
   position: fixed;
   width: 100%;
- color: #eeeeee;
+  color: #eeeeee;
   top: 0;
   left: 0;
   background: #f34f4f;
@@ -220,6 +245,7 @@ margin: 10px;
   transform-origin: 6vw -21vh;
   box-shadow: -2vmin 0 0.8857267112920597vmin currentColor;
 }
+
 .background span:nth-child(1) {
   color: #ffffff;
   top: 34%;
@@ -229,6 +255,7 @@ margin: 10px;
   transform-origin: -22vw -3vh;
   box-shadow: 2vmin 0 0.507022754174496vmin currentColor;
 }
+
 .background span:nth-child(2) {
   color: #fff5f8;
   top: 59%;
@@ -238,6 +265,7 @@ margin: 10px;
   transform-origin: -21vw 1vh;
   box-shadow: 2vmin 0 1.241006784223841vmin currentColor;
 }
+
 .background span:nth-child(3) {
   color: #efe7fd;
   top: 20%;
@@ -247,6 +275,7 @@ margin: 10px;
   transform-origin: 4vw 14vh;
   box-shadow: -2vmin 0 0.9876456164405492vmin currentColor;
 }
+
 .background span:nth-child(4) {
   color: #ffffff;
   top: 49%;
@@ -256,6 +285,7 @@ margin: 10px;
   transform-origin: 6vw -22vh;
   box-shadow: 2vmin 0 0.6215648413892751vmin currentColor;
 }
+
 .background span:nth-child(5) {
   color: #fff5f8;
   top: 23%;
@@ -265,6 +295,7 @@ margin: 10px;
   transform-origin: 10vw 19vh;
   box-shadow: 2vmin 0 0.691729904149617vmin currentColor;
 }
+
 .background span:nth-child(6) {
   color: #ffffff;
   top: 70%;
@@ -274,6 +305,7 @@ margin: 10px;
   transform-origin: -10vw -2vh;
   box-shadow: 2vmin 0 1.119187342863127vmin currentColor;
 }
+
 .background span:nth-child(7) {
   color: #ffffff;
   top: 79%;
@@ -283,6 +315,7 @@ margin: 10px;
   transform-origin: -10vw -11vh;
   box-shadow: -2vmin 0 1.0561934420475674vmin currentColor;
 }
+
 .background span:nth-child(8) {
   color: #fff5f8;
   top: 55%;
@@ -292,6 +325,7 @@ margin: 10px;
   transform-origin: -19vw 1vh;
   box-shadow: -2vmin 0 0.6209753485807834vmin currentColor;
 }
+
 .background span:nth-child(9) {
   color: #ffffff;
   top: 94%;
@@ -301,6 +335,7 @@ margin: 10px;
   transform-origin: 12vw -11vh;
   box-shadow: 2vmin 0 0.930784979886139vmin currentColor;
 }
+
 .background span:nth-child(10) {
   color: #fff5f8;
   top: 15%;
@@ -310,6 +345,7 @@ margin: 10px;
   transform-origin: -5vw -15vh;
   box-shadow: 2vmin 0 0.7242533202380272vmin currentColor;
 }
+
 .background span:nth-child(11) {
   color: #fff5f8;
   top: 70%;
@@ -319,6 +355,7 @@ margin: 10px;
   transform-origin: -22vw -16vh;
   box-shadow: -2vmin 0 1.2401606869279422vmin currentColor;
 }
+
 .background span:nth-child(12) {
   color: #fff5f8;
   top: 65%;
@@ -328,6 +365,7 @@ margin: 10px;
   transform-origin: 16vw -18vh;
   box-shadow: -2vmin 0 1.0961581713089168vmin currentColor;
 }
+
 .background span:nth-child(13) {
   color: #efe7fd;
   top: 89%;
@@ -337,6 +375,7 @@ margin: 10px;
   transform-origin: 20vw 13vh;
   box-shadow: 2vmin 0 0.5420725835814315vmin currentColor;
 }
+
 .background span:nth-child(14) {
   color: #efe7fd;
   top: 36%;
@@ -346,6 +385,7 @@ margin: 10px;
   transform-origin: -10vw 2vh;
   box-shadow: -2vmin 0 0.674350343062367vmin currentColor;
 }
+
 .background span:nth-child(15) {
   color: #efe7fd;
   top: 2%;
@@ -355,6 +395,7 @@ margin: 10px;
   transform-origin: -20vw 19vh;
   box-shadow: -2vmin 0 0.6042582552547349vmin currentColor;
 }
+
 .background span:nth-child(16) {
   color: #fff5f8;
   top: 85%;
@@ -364,6 +405,7 @@ margin: 10px;
   transform-origin: 11vw -14vh;
   box-shadow: -2vmin 0 0.85307742222048vmin currentColor;
 }
+
 .background span:nth-child(17) {
   color: #ffffff;
   top: 13%;
@@ -373,6 +415,7 @@ margin: 10px;
   transform-origin: -18vw -13vh;
   box-shadow: -2vmin 0 0.5965974633441693vmin currentColor;
 }
+
 .background span:nth-child(18) {
   color: #fff5f8;
   top: 74%;
@@ -382,6 +425,7 @@ margin: 10px;
   transform-origin: 4vw -13vh;
   box-shadow: -2vmin 0 0.682184668745333vmin currentColor;
 }
+
 .background span:nth-child(19) {
   color: #fff5f8;
   top: 44%;
@@ -391,4 +435,3 @@ margin: 10px;
   transform-origin: 19vw 1vh;
   box-shadow: -2vmin 0 0.5368094548534752vmin currentColor;
 }
-

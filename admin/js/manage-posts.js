@@ -52,7 +52,7 @@ async function fetchAllbloggs() {
     
             try {
                 const response = await fetch('https://blog-api-assignment.up.railway.app/posts/'+ e.target.dataset.id, {
-                    method: 'DELETE'
+                    method:  'DELETE'
                 });
     
                 e.target.parentNode.parentNode.remove();

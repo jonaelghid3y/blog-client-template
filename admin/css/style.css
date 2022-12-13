@@ -3,6 +3,17 @@
   font-size: 20px;
   margin: 20px;
 }
+#container2{
+
+  margin-top: 120px;
+}
+#tablecontainer{
+margin-top: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 table {
 
  
@@ -10,7 +21,7 @@ table {
 
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
     margin-top: 50px;
   }
    
@@ -40,7 +51,7 @@ h1{
 
 }
 #container3{
-    margin-top: 100px;
+ margin-top: 100px;
    
    grid-template-columns: repeat(12, 1fr);
  
@@ -89,13 +100,26 @@ h1{
   grid-row-end: 10;
   
 }
-  .select{
-    grid-column-start: 6;
-    grid-column-end: 8;
-    grid-row-start: 11;
-    grid-row-end: 12;
+#selectiondiv{
+  
+  
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 10;
+  grid-row-end: 11;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 300px;
+  gap: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 
-  }
+
+  
+}
+
   #submit{
     grid-column-start: 6;
     grid-column-end: 8;
@@ -118,7 +142,9 @@ h1{
   display: border 1px solid black;
   
 }
+
 .select {
+margin: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 300px;
@@ -142,44 +168,18 @@ h1{
   background: #009578;
   color: #ffffff;
 }
-.btn {
-  background-color: DodgerBlue;
-  border: none;
-  color: white;
-  padding: 12px 16px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-/* Darker background on mouse-over */
-.deletebtn:hover {
-  background-color: rgb(155, 20, 15);
-}
 .deletebtn{
+  margin-left: 10px;
+  color: white;
+  background-color: red;
+ 
+}
+.uppdatebtn{
 
-    background-color: rgb(247, 10, 10);
-    border: none;
-    color: white;
-    padding: 12px 16px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 20px;
+  background-color: yellow;
   
-  }
-  .uppdatebtn:hover {
-    background-color: rgb(247, 222, 0);
-  }
-  .uppdatebtn{
-  
-      background-color: rgb(254, 254, 34);
-      border: none;
-      color: white;
-      padding: 12px 16px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  
-  /* Darker background on mouse-over */
+
+}
 
 /*_________________________________________------------------------------background animation---------------------____________________________________________________*/
 @keyframes move {

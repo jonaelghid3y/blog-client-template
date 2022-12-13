@@ -64,15 +64,22 @@ document.getElementById('create-pun-form').addEventListener('submit', async func
     let titles = document.getElementById('titel')
     let authors = document.getElementById('author')
     let texts = document.getElementById('content-textarea')
-    let selection = document.getElementById('select')
-    console.log(selection.value)
-  
+    let selection1 = document.getElementById('select1')
+    let selection2 = document.getElementById('select2')
+    let selection3 = document.getElementById('select3')
+    
+    
+    
+
+    let tags = [selection1.value , selection2.value, selection3.value]
+    
+  console.log(tags)
     const blogpost = {
 
         title: titles.value,
         author: authors.value,
         content: texts.value,
-        tags: selection.value
+        tags: tags
 
     }
  

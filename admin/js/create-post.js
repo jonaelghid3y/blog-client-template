@@ -57,12 +57,12 @@ document.querySelectorAll(".custom-select").forEach((selectElement) => {
 });
 /*--------------------------------------------- ovan är animation för tags-------------------------------------------------------------*/
 
-document.getElementById('create-pun-form').addEventListener('submit', async function (e) {
+document.getElementById('create-pun-form').addEventListener('submit', async function (e) {   //eventlissner när man submitar
   e.preventDefault()
   const form = e.target
 
 
-  let serializeForm = function (form) {
+  let serializeForm = function (form) {                     //sibars formel för att skapa ett objekt 
 
     var obj = {};
     var formData = new FormData(form);
@@ -80,19 +80,15 @@ document.getElementById('create-pun-form').addEventListener('submit', async func
 
     return obj;
   };
-  let formDataObjekt = serializeForm(form);
+  let formDataObjekt = serializeForm(form);             //kallar på formeln
 
-
-
-  let titles = document.getElementById('titel')
+  let titles = document.getElementById('titel')         //kallar på formulären för att fylla in objektet nedanför
   let authors = document.getElementById('author')
   let texts = document.getElementById('content-textarea')
-  let selection1 = document.getElementById('select1')
 
+  console.log(formDataObjekt.tags)                    // taggarna i en array
 
-  console.log(formDataObjekt.tags)
-
-  const blogpost = {
+  const blogpost = {                                  // blogg inlägget vi skickar upp
 
     title: titles.value,
     author: authors.value,
@@ -101,7 +97,7 @@ document.getElementById('create-pun-form').addEventListener('submit', async func
 
   }
 
-  try {
+  try {                                                                       //kod för att skicka upp datan
     await fetch('https://blog-api-assignment.up.railway.app/posts', {
       method: 'POST', // *GET, POST, PUT, DELETE, etc.
       headers: {

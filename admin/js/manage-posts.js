@@ -39,7 +39,6 @@ async function fetchAllbloggs() {                                               
 
                 e.target.parentNode.parentNode.remove();
 
-
             } catch (error) {
                 console.log(error);
             }

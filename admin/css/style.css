@@ -33,16 +33,14 @@ table {
 }
 
 td,
-th,
-#titel,
-#author {
-  border: 1px solid #dddddd;
+th{
+  border: 1px solid #f8afaf;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #f0bbbb;
 }
 
 #admin {
@@ -88,9 +86,11 @@ h1 {
 #titel {
   grid-column: 5/9;
   grid-row: 2/3;
+  height: 40px;
 }
 
 #author {
+  height: 40px;
   grid-column: 5/9;
   grid-row: 3/4;
 }
@@ -128,10 +128,6 @@ h1 {
   text-align: center;
   grid-column: 6/8;
   grid-row: 8/13;
-  grid-column-start: 6;
-  grid-column-end: 8;
-  grid-row-start: 13;
-  grid-row-end: 14;
   font-family: "Heebo", sans-serif;
   text-align: center;
   display: border 1px solid black;

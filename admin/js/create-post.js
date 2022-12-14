@@ -67,7 +67,6 @@ document.getElementById('create-pun-form').addEventListener('submit', async func
     var obj = {};
     var formData = new FormData(form);
 
-
     for (var key of formData.keys()) {
       let inputData = formData.getAll(key);
 

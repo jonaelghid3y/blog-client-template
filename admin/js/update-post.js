@@ -1,12 +1,9 @@
 
 
-
 window.onload = function() {
 
     let urlParams = new URLSearchParams(window.location.search)
     console.log(urlParams.get('id'))
-
-   
 
     async function update() {
 
